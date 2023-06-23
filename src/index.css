@@ -1,0 +1,107 @@
+html { scroll-behavior: smooth; } 
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
+
+* {
+    -webkit-user-select: unset !important;
+    -moz-user-select: unset !important;
+    -ms-user-select: unset !important;
+    user-select: unset !important;
+}
+
+.react-horizontal-scrolling-menu--scroll-container::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 1px #aeaeae !important;
+}
+
+.react-horizontal-scrolling-menu--scroll-container::-webkit-scrollbar {
+    height: 0px !important;
+}
+
+.react-horizontal-scrolling-menu--scroll-container::-webkit-scrollbar-thumb {
+    background-color: transparent !important;
+}
+
+.scrollmenu-wrapper{
+    position: relative;
+    padding-top: 28px;
+}
+
+.scrollmenu-item{
+    scroll-snap-align: start !important;
+}
+
+@media only screen and (max-width: 1200px) {
+    .scrollmenu-container{
+        scroll-snap-type: x mandatory;
+    }
+    .scrollmenu-wrapper{
+        position: relative;
+        padding-top: 0px;
+    }
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 2px;
+}
+   
+.custom-scrollbar::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px #aeaeae;
+}
+   
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #aaaaaa;
+}
+
+@media only screen and (max-width: 1200px) {
+    .MuiCalendarPicker-root{
+        margin: 0 !important;
+        width: 100% !important;
+        max-height: 320px !important;
+        overflow: hidden !important;
+    }
+    .MuiCalendarPicker-viewTransitionContainer{
+        overflow: hidden !important;
+    }
+}
+
+
+#admin-drawer .MuiListItem-root.MuiListItem-gutters.Mui-selected{
+    background-color: #DF6D7350;
+}
+
+#appointments-barbers .MuiChip-root, #appointments-services .MuiChip-root{
+    border: 1px solid transparent !important;
+}
+
+.PrivateDatePickerToolbar-penIcon{
+    display: none !important;
+}
+
+.ScrollbarsCustom-Track.ScrollbarsCustom-TrackY,
+.ScrollbarsCustom-Thumb.ScrollbarsCustom-ThumbY{
+    width: 0px !important;
+}
+
+.ScrollbarsCustom-Wrapper{
+    inset: 0px !important;
+}
+
+.css-iur3w5-MuiPaper-root-MuiDrawer-paper{
+    background-image: none !important;
+}
+
+#profile-tabs > div.MuiBox-root.css-1b46un8 > div{
+    border: none !important;
+}
+
+.MuiChip-root.MuiChip-filled.MuiChip-colorSuccess.MuiChip-filledSuccess {
+    background-color: #EEFBEA !important;
+    color: #229A16 !important;
+}
+
+.MuiChip-root.MuiChip-filled.MuiChip-colorError.MuiChip-filledError {
+    background-color: #FBEBEB !important;
+    color: #d32f2f !important;
+}
